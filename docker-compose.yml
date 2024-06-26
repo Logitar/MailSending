@@ -1,0 +1,9 @@
+name: mailsending
+services:
+  mailsending_smtp:
+    image: dockage/mailcatcher:0.9.0
+    container_name: MailSending_smtp
+    restart: unless-stopped
+    ports:
+      - 1025:1025
+      - 1080:1080
